@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 2 - API </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/static/search.ico" type="image/x-icon">
+</head>
+<body>
+<div id="container">
+    <div class="window in">
+        <form action="/steam_info" method="get">
+            <label for="nick-name">Podaj nick na steam'ie, aby wyszukać informacje o trzech ostatnich granych grach w przeciągu 2 tygodni:</label>
+            <div class="input">
+                <input type="text" id="nick-name" name="nick-name">
+                <button type="submit" id="submit">Znajdź</button>
+            </div>
+        </form>
+    </div>
+    <div class="window profile">
+        <p>Profil</p>
+        <div id="profile">
+            <div id="profile-image"></div>
+            <div id="text-data">
+                <div id="profile-name"></div>
+                <div id="profile-url"></div>
+                <div id="no-user"></div>
+            </div>
+
+        </div>
+    </div>
+    <div id="information">
+        <div class="window game">
+            <p id="game-name-1"></p>
+            <div id="game-1"></div>
+        </div>
+
+        <div class="window game">
+            <p id="game-name-2"></p>
+            <div id="game-2"></div>
+        </div>
+        <div class="window game">
+            <p id="game-name-3"></p>
+            <div id="game-3"></div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

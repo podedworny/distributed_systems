@@ -1,0 +1,102 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100vw;
+    margin: 20px 0 0;
+}
+
+.window {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 30vh;
+    width: 30vw;
+    border: 1px solid black;
+    /*margin: auto;*/
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    font-family: Arial, sans-serif;
+}
+
+.game {
+    background-color: #7dcefa;
+}
+
+.profile{
+    background-color: #7dfaa5;
+    min-height: 15vh;
+}
+
+
+
+.in {
+    background-color: #faf87d;
+    justify-content: center;
+    min-height: 10vh;
+    visibility: visible;
+}
+
+
+#submit {
+    background-color: #f7d794;
+}
+
+#submit:hover {
+    background-color: #f3a683;
+}
+
+#submit:active {
+    background-color: #f19066;
+}
+
+
+#container{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    align-items: center;
+}
+
+#information{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1vw;
+    align-items: flex-start;
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 3vh;
+    text-align: center;
+}
+
+button {
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 3vh;
+}
+
+#input {
+    display: flex;
+}
+
+label {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#profile {
+    display: flex;
+}
