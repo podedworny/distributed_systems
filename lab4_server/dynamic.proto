@@ -1,0 +1,19 @@
+syntax = "proto3";
+package dynamic;
+
+
+message SimpleRequest   { string text = 1; }
+message SimpleResponse  { string reply = 1; }
+
+message StreamRequest   { int32 count = 1; }
+message StreamResponse  { int32 number = 1; }
+
+message Item            { int32 id = 1; string name = 2; }
+message ComplexRequest  { repeated Item items = 1; }
+message ComplexResponse { repeated Item total = 1; }
+
+service ExampleService {
+  rpc UnaryCall(SimpleRequest)    returns (SimpleResponse);
+  rpc ServerStream(StreamRequest) returns (stream StreamResponse);
+  rpc ProcessItems(ComplexRequest) returns (ComplexResponse);
+}
